@@ -1,0 +1,13 @@
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+### Ipynb ###
+.ipynb_checkpoints/
+*.ipynb
+
+### Misc ###
+data/
+dask-worker-space/
