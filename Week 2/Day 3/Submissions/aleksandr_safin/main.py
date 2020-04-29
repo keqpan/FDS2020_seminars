@@ -17,9 +17,7 @@ def main(args):
     fetch_data(args.data_dir, args.dataset_name)
     
     X, y = prepare_data(os.path.join(args.data_dir, args.dataset_name, '*.csv'))
-    X = X[:5000]
-    y = y[:5000]
-    
+
     print("Starting dask cluster ...")
     cluster = make_cluster(n_workers=args.n_workers)
     client = Client()
